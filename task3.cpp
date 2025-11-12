@@ -28,6 +28,16 @@ class Account
 
 };
 
+class SavingsAccount : public Account {
+	public:
+		int withdraw (int amnt)
+		{
+			if(amnt>50000)
+				cout<<"Withdraw Limit Exceed"<<endl;
+			return 0;
+		}
+};
+
 
 int main()
 {
